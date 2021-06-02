@@ -1,4 +1,4 @@
-package com.company;
+package school;
 
 public class Main {
 
