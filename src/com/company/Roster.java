@@ -6,7 +6,10 @@ public class Roster {
   ArrayList<Student> roster;
 
   public Roster() {
-    this.roster = new ArrayList<Student>();
+    this.roster = new ArrayList<>();
+  }
+  public Roster(ArrayList<Student> roster) {
+    this.roster = roster;
   }
 
   void addStudent(Student newStudent) {
@@ -20,7 +23,7 @@ public class Roster {
   }
 
   ArrayList<Student> getTopStudents() {
-    ArrayList<Student> topStudents = new ArrayList();
+    ArrayList<Student> topStudents = new ArrayList<>();
     for(Student student : roster) {
       if (student.getGpa() >= 3.5){
         topStudents.add(student);

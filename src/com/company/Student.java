@@ -1,11 +1,13 @@
 package com.company;
 
+import java.util.List;
+
 public class Student {
     String name;
     double gpa;
-    String[] courses;
+    List<String> courses;
 
-    public Student(String name, double gpa, String[] courses) {
+    public Student(String name, double gpa, List<String> courses) {
         this.name = name;
         this.gpa = gpa;
         this.courses = courses;
