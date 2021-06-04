@@ -26,4 +26,14 @@ public class Student {
     public String getName() { return name; }
     public double getGpa() { return gpa; }
     public List<String> getCourses() { return courses; }
+
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", gpa=" + gpa +
+                ", courses=" + courses +
+                '}';
+    }
 }
